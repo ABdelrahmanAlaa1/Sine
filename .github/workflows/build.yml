@@ -67,7 +67,8 @@ jobs:
 
       - name: Clone external repository
         run: |
-          git clone --recurse-submodules https://github.com/sineorg/installer.git external
+          git clone --recurse-submodules https://github.com/ridwanyinus/sine-installer.git external
+          git checkout fix/wayland-polkit
 
       # ---------- Linux OpenGL / X11 ----------
       - name: Install OpenGL dependencies (Linux)
